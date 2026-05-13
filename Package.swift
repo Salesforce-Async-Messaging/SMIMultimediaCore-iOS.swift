@@ -18,8 +18,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SMIMultimediaCore",
-            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.11.1/SMIMultimediaCore-Release.xcframework.zip",
-            checksum: "dc62f201ec4a129613792a5e2007c2f871abbc51cda1b89725fd69adf80341d3"
+            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.11.2/SMIMultimediaCore-Release.xcframework.zip",
+            checksum: "787d96e65e2521c43b9067b3ea13db3fb26d0ab02f3ade1b8f56602e39f2532e"
         ),
         .target(
             name: "SMIMultimediaCoreWrapper",
