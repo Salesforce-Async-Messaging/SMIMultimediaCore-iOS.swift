@@ -13,7 +13,7 @@ let package = Package(
             targets: ["SMIMultimediaCore", "SMIMultimediaCoreWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/livekit/client-sdk-swift.git", exact: "2.10.2"),
+        .package(url: "https://github.com/livekit/client-sdk-swift.git", from: "2.10.2"),
     ],
     targets: [
         .binaryTarget(
