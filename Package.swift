@@ -13,19 +13,19 @@ let package = Package(
             targets: ["SMIMultimediaCore", "SMIMultimediaCoreWrapper"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/livekit/webrtc-xcframework.git", exact: "137.7151.10"),
+        .package(url: "https://github.com/livekit/client-sdk-swift.git", .upToNextMinor(from: "2.11.0")),
     ],
     targets: [
         .binaryTarget(
             name: "SMIMultimediaCore",
-            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.11.3/SMIMultimediaCore-Release.xcframework.zip",
-            checksum: "69a0a6130acc2209241b354c3bbe54f6bb939d690ce695614beb43c5f6d2f035"
+            url: "https://salesforce-async-messaging.s3.amazonaws.com/public/ios/1.12.0/SMIMultimediaCore-Release.xcframework.zip",
+            checksum: "f0f505508e8c4700c44a2cbf90fe463fb96bf509a6180d680134e1a96099205f"
         ),
         .target(
             name: "SMIMultimediaCoreWrapper",
             dependencies: [
                 "SMIMultimediaCore",
-                .product(name: "LiveKitWebRTC", package: "webrtc-xcframework")
+                .product(name: "LiveKit", package: "client-sdk-swift")
             ]
         )
     ]
